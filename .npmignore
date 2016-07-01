@@ -1,0 +1,10 @@
+#SERVERLESS
+admin.env
+.env
+
+#Ignore _meta folder
+_meta
+
+#Client Sample
+client-sample/bundle.js
+
