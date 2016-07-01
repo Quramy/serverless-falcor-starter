@@ -2,9 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Serverless Falcor Starter Sample Client</title>
+  <style type="text/css">
+    * {
+      color: #404047;
+      font-family: helvetica;
+    }
+    body {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      text-align: center;
+      background-color: #49c7a4;
+      color: white;
+      border-radius: 4px;
+      font-size: 14px;
+      padding: 4px 20px;
+      cursor: pointer;
+      margin-right: 15px;
+    }
+    .btn:hover {
+      opacity: .8;
+    }
+  </style>
 </head>
 <body>
+<header>
+  <h1>Serverless Falcor Starter Sample Client</h1>
+</header>
+<section>
+  <p>
+    Click the followin button, then the Falcor model sends XHR to your AWS API Gateway endpoint.
+  </p>
+  <div class="btn" id="modelGet">Get</div>
+  <div class="btn" id="modelSet">Set</div>
+</section>
 <script src="bundle.js"></script>
 </body>
 </html>

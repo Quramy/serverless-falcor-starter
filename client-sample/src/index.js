@@ -16,11 +16,17 @@ const model = new Model({
   source,
 });
 
-model.get("greeting").then(result => {
-  console.log(result);
-}).then(() => {
-  return model.set({path: "greeting", value: "bye"});
-}).then(result => {
-  console.log(result);
+const getBtn = document.getElementById("modelGet");
+getBtn.addEventListener("click", () => {
+  model.get("greeting").then(({json}) => {
+    alert(JSON.stringify(json));
+  });
+});
+
+const setBtn = document.getElementById("modelSet");
+setBtn.addEventListener("click", () => {
+  model.set({path: "greeting", value: "bye"}).then(() => {
+    alert("Done. Click the Get button again!");
+  });
 });
 
