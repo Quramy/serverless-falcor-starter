@@ -1,0 +1,17 @@
+{
+  "name": "client-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify -d -t [ babelify ] -o bundle.js src/index.js",
+    "start": "npm run build && http-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "falcor": "^0.1.17",
+    "falcor-http-datasource": "Netflix/falcor-http-datasource"
+  }
+}
