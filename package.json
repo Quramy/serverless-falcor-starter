@@ -1,0 +1,30 @@
+{
+  "name": "serverless-falcor-starter",
+  "version": "0.1.0",
+  "description": "A Serverless Project including falcor routing.",
+  "author": "me",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register falcor/model/*.spec.js"
+  },
+  "keywords": [
+    "serverless",
+    "falcor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Quramy/serverless-falcor-starter"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "falcor-lambda": "^0.1.0",
+    "falcor-router": "^0.4.0",
+    "serverless-optimizer-plugin": "^2.5.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "mocha": "^2.5.3"
+  }
+}
