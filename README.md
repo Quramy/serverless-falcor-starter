@@ -6,22 +6,16 @@ Provides a [Serverless](http://serverless.com/) project including a [Falcor](htt
 
 You need `serverless` CLI. See http://docs.serverless.com/docs/installing-serverless .
 
-Create Project from serverless-falcor-starter:
+Create and initialize project from serverless-falcor-starter:
 
 ```sh
 serverless project install serverless-falcor-starter
 ```
 
-And initialize it:
-
-```sh
-cd serverless-falcor-starter
-serverless init
-```
-
 Deploy function and endpoints:
 
 ```sh
+cd serverless-falcor-starter
 serverless function deploy
 serverless endpoints deploy --all
 ```

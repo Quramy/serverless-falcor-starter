@@ -28,7 +28,10 @@
     },
     "cors": {
       "allowOrigin": "*",
-      "allowHeaders": ["Content-Type", "Authorization"]
+      "allowHeaders": [
+        "Content-Type",
+        "Authorization"
+      ]
     }
   },
   "endpoints": [
