@@ -25,6 +25,10 @@
           }
         }
       ]
+    },
+    "cors": {
+      "allowOrigin": "*",
+      "allowHeaders": ["Content-Type", "Authorization"]
     }
   },
   "endpoints": [

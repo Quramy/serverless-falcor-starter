@@ -2,6 +2,7 @@
   "name": "serverless-falcor-starter",
   "custom": {},
   "plugins": [
-    "serverless-optimizer-plugin"
+    "serverless-optimizer-plugin",
+    "serverless-cors-plugin"
   ]
 }
