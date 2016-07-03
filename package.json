@@ -1,8 +1,8 @@
 {
   "name": "serverless-falcor-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Serverless project including Falcor routing.",
-  "author": "me",
+  "author": "Quramy",
   "license": "MIT",
   "private": false,
   "scripts": {
