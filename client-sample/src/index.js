@@ -30,3 +30,5 @@ setBtn.addEventListener("click", () => {
   });
 });
 
+const urlSpan = document.getElementById("endpoint_url");
+urlSpan.innerHTML = url;
