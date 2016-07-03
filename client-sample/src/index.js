@@ -5,8 +5,11 @@ import HttpDataSource from "falcor-http-datasource";
 const url = require("../config.json").endpoint;
 
 const source = new HttpDataSource(url, {
-  crossDomain: true,
-  withCredentials: false,
+
+  /* The following options are required for CORS request */
+  crossDomain: true, withCredentials: false,
+
+  /* An AWS API Gateway endpoint allows only application/json Content-Type */
   headers: {
     "Content-Type": "application/json",
   },
