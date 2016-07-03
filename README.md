@@ -1,10 +1,10 @@
 # Serverless Falcor Starter
 
-Provides a [Serverless](http://serverless.com/) project including a [Falcor](http://netflix.github.io/falcor/) endpoint.
+This [Serverless Framework](http://serverless.com/) project creates a REST API for a [Falcor](http://netflix.github.io/falcor/) endpoint.
 
 ## Getting Started
 
-You need `serverless` CLI. See http://docs.serverless.com/docs/installing-serverless .
+You need `serverless` CLI(0.5.x or later). See http://docs.serverless.com/docs/installing-serverless .
 
 Create and initialize project from serverless-falcor-starter:
 
@@ -45,6 +45,38 @@ cd client-sample
 npm i
 npm start
 ```
+
+## Customize Falcor JSON Graph routing
+
+This project include a Falcor router, `falcor/model/router.js`. If you want more JSON Graph paths, you can add more route definitions at this file. See also [Netfilx's falcor-router guide](http://netflix.github.io/falcor/documentation/router.html).
+
+```js
+/* falcor/model/router.js */
+
+import Router from "falcor-router";
+
+export default class MyRouter extends Router.createClass([
+  {
+    route: "greeting",
+    get: function(pathset) {
+      return {
+        path: ["greeting"],
+        value: "Hello, world",
+      };
+    },
+    set: function(jsonGraph) {
+      return {
+        path: ["greeting"],
+        value: jsonGraph.greeting,
+      };
+    }
+  },
+  /* Add more route definitions... */
+]) {
+
+}
+```
+
 
 ## License
 
