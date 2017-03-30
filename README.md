@@ -1,5 +1,7 @@
 # Serverless Falcor Starter
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Quramy/serverless-falcor-starter.svg)](https://greenkeeper.io/)
+
 This [Serverless Framework](http://serverless.com/) project creates a REST API for a [Falcor](http://netflix.github.io/falcor/) endpoint.
 
 ## Getting Started
